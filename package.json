@@ -1,0 +1,14 @@
+{
+  "name": "keyboard",
+  "version": "1.0.0",
+  "description": "Configuration file",
+  "main": "scripts.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ilyas Ilyasov",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^7.28.0"
+  }
+}
