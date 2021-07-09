@@ -1,0 +1,103 @@
+@import "variables";
+
+.containerDiv {
+    margin: 30px auto;
+    padding: 10px;
+    border: 1px solid $border_color_containers;
+}
+
+.lang {
+    width: 50px;
+    height: 50px;
+    border: 2px solid $border_color_containers;
+    border-radius: 4px;
+    box-sizing: border-box;
+    float: right;
+    position: relative;
+    right: 215px;
+    top: 10px;
+    font-size: 26px;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+}
+
+.keysContainer {
+    width: 898px;
+    margin: 10px auto;
+    padding: 5px;
+    border: 1px solid $border_color_containers;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.button,
+.backspace,
+.tab,
+.enter-main,
+.enter-part,
+.capsLock,
+.shift,
+.ctrl,
+.alt,
+.cmd,
+.space {
+    height: 60px;
+    margin: 1px;
+    font-size: 16px;
+    border-style: outset;
+    border: 1px solid $border_color_buttons;
+}
+
+.enter-main {
+    margin: 1px;
+    font-size: 16px;
+    border-style: outset;
+    border: 1px solid $border_color_buttons;
+    background-color: $bg_buttons;
+}
+
+.enter-part {
+    height: 63px;
+    margin: -1px;
+    background-color: $bg_buttons;
+    position: relative;
+    top: -1px;
+    right: -2px;
+    border-style: outset;
+    border: 1px solid $border_color_buttons;
+    border-top: none;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+.arrows {
+    display: grid;
+    grid-template-areas: 
+    'arrow1 arrow1 arrow1'
+    'arrow2 arrow3 arrow4';
+    justify-items: center;
+}
+
+.arrow1 {
+    grid-area: arrow1;
+}
+
+.arrow2 {
+    grid-area: arrow2;
+}
+
+.arrow3 {
+    grid-area: arrow3;
+}
+
+.arrow4 {
+    grid-area: arrow4;
+}
+
+.arrow1, .arrow2, .arrow3, .arrow4 {
+    border-style: outset;
+    border: 1px solid $border_color_buttons;
+    margin: 1px;
+}
